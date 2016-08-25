@@ -17,8 +17,11 @@ typedef NS_ENUM(NSInteger,XLPhotoPickerDisplayType){
 @protocol XLPhotoPickerDelegate <NSObject>
 
 @optional
+/** 返回当前视图的高度 */
 - (void)photoPicker:(XLPhotoPicker *)photoPicker didPickerHeightChanged:(CGFloat)pickerHeight;
+/** 点击添加按钮回调 */
 - (void)photoPicker:(XLPhotoPicker *)photoPicker didClickAddButton:(UIButton *)addButton;
+/** 单个图片点击事件 */
 - (void)photoPicker:(XLPhotoPicker *)photoPicker didSelectPhoto:(XLPhoto *)photo;
 
 @end
