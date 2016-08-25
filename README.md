@@ -31,9 +31,8 @@
 - (void)addImages:(NSArray *)images;
 - (void)reloadData;
 - (NSArray *)photos;
-``
-* Delegate
-```
+
+
 /** 返回当前视图的高度 */
 - (void)photoPicker:(XLPhotoPicker *)photoPicker didPickerHeightChanged:(CGFloat)pickerHeight;
 /** 点击添加按钮回调 */
@@ -41,7 +40,8 @@
 /** 单个图片点击事件 */
 - (void)photoPicker:(XLPhotoPicker *)photoPicker didSelectPhoto:(XLPhoto *)photo;
 
-``
+```
+
 
 # 用法
     具体用法，看demo即可，非常简单的例子。
